@@ -1,0 +1,1070 @@
+/*----------------------------------------
+    header
+----------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.headContainer {
+    background-color: #ff6f00;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.headContainer .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.headContainer .left a {
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.headContainer .right {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.headContainer .right div {
+    padding: 0 15px;
+}
+
+.headContainer .right div a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.cartQty {
+    color: white;
+    font-size: 14px;
+    padding: 0 1;
+}
+
+.toggle i {
+    display: none;
+    color: white;
+    right: 20px;
+    top: 18px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+#loginIcon,
+#registerIcon {
+    display: none;
+}
+
+.fa-bell {
+    color: black;
+}
+
+.loginAs {
+    font-size: 14px;
+}
+
+#logo img {
+    width: 150px;
+    height: 60px;
+}
+
+/*----------------------------------------
+    responsive header
+----------------------------------------*/
+@media (max-width: 1059px) {
+    .headContainer {
+        display: block;
+        height: auto;
+        background-color: #ff6f00;
+    }
+    .headContainer .left {
+        padding: 0;
+        height: 60px;
+    }
+    .headContainer .left #logo {
+        flex: 1;
+        padding-left: 30px;
+    }
+    .headContainer .left .toggle i {
+        padding-right: 30px;
+    }
+    .headContainer .right {
+        display: none;
+        padding: 0;
+    }
+    .headContainer .right.active {
+        display: block;
+        padding: 0;
+    }
+    .headContainer .right div {
+        padding-left: 30px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .toggle i {
+        display: block;
+    }
+    #loginIcon,
+    #registerIcon {
+        display: inline;
+    }
+}
+
+/*----------------------------------------
+    user login
+----------------------------------------*/
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.loginContainer .login {
+    flex: 0.3;
+    padding: 20px 85px 40px 85px;
+    max-height: 100%;
+    overflow-y: auto;
+    box-shadow: 0 3px 3px 0 #b4b2b1;
+}
+
+.loginContainer .login .header {
+    padding: 10px 0 15px 0;
+}
+
+.loginContainer .login .header h1 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 16px;
+}
+
+.loginContainer .login .header span {
+    font-size: 14px;
+}
+
+.loginContainer .login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginContainer .login form input[type="text"],
+.loginContainer .login form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.loginContainer .login form input[type="submit"] {
+    background-color: #4285f4;
+    color: white;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+label.error {
+    color: red;
+    font-size: 12.5px;
+}
+
+/*----------------------------------------
+    responsive user login
+----------------------------------------*/
+@media (max-width: 60em) {
+    .loginContainer {
+        margin: 40px 15px;
+        flex-direction: column;
+    }
+    .loginContainer .login {
+        padding: 20px 65px 0 65px;
+        box-shadow: none;
+    }
+}
+
+/*----------------------------------------
+    home
+----------------------------------------*/
+#slideshow {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#slideshow > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------- */
+
+.availableMenusContainer {
+    background-color: white;
+}
+
+.availableMenusContainer h1 {
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0;
+}
+
+.availableMenus {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.availableMenus div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.availableMenus div img {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.availableMenus div span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+/* ---------------------------------------- */
+
+.storyContainer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 70px;
+    background-color: #f3f3f3;
+    flex-wrap: wrap;
+}
+
+.story {
+    width: 100%;
+    margin: 15px;
+    padding: 35px;
+    background-color: white;
+    box-shadow: 4px 4px 10px #ccc;
+}
+
+.story h1 {
+    font-size: 22px;
+    font-weight: 500px;
+    padding: 10px 0;
+}
+
+.story p {
+    text-align: justify;
+}
+
+.enjoyFood {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 45px;
+    font-family: "Brush Script MT";
+}
+
+.enjoyFood img,
+.enjoyFood span {
+    padding: 0 35px;
+}
+
+/* ---------------------------------------- */
+
+.commentContainer {
+    background-color: #f3f3f3;
+    padding: 30px;
+    height: auto;
+    overflow: hidden;
+}
+
+.commentContainer .commentBody {
+    margin: 50px 0;
+}
+
+.commentHeader {
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+.commentHeader h1 {
+    font-size: 30px;
+}
+
+.commentBody .commentBodyImage {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.commentBody .commentBodyImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.commentBody .commentBodyText {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.commentBody .commentBodyText .commenter {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.commentBody .commentBodyText .commenterShop {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.commentBody .commentBodyText .comment {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.access {
+    position: relative;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.access img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.access h1 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 28px;
+    padding: 60px 0;
+    margin: 0;
+}
+
+.access a {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 5px;
+}
+
+.access a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+/*----------------------------------------
+    responsive home
+----------------------------------------*/
+
+/* For desktop: */
+@media only screen and (min-width: 760px) {
+    #slideshow {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    #slideshow {
+        height: 400px;
+    }
+    .story {
+        width: 30%;
+    }
+
+    .commentContainer .commentBody {
+        margin: 40px 0;
+        width: 50%;
+        float: left;
+        display: flex;
+        padding: 10px 25px;
+    }
+
+    .commentBody .commentBodyText {
+        width: 70%;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    #slideshow {
+        height: 500px;
+    }
+
+    .commentContainer {
+        padding: 30px 70px 50px 70px;
+    }
+
+    .commentHeader {
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+}
+
+/*----------------------------------------
+    menus
+----------------------------------------*/
+.toggleCategory {
+    border-bottom: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 30px;
+}
+
+#toggleCategory {
+    color: black;
+}
+
+#toggleCategory:hover {
+    cursor: pointer;
+}
+
+.wrap {
+    margin-top: 60px;
+}
+
+.categories {
+    line-height: 45px;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.categories a {
+    color: black;
+    padding: 0 13px;
+    font-size: 15px;
+}
+
+.activedCategory {
+    text-align: center;
+    background-color: #f3f3f3;
+    height: 45px;
+}
+
+.activedCategory:hover {
+    cursor: pointer;
+}
+
+.activedCategory h1 {
+    font-size: 23px;
+    line-height: 45px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.menus {
+    margin: 55px 0 25px 0;
+    box-sizing: border-box;
+    min-height: 600px;
+    padding: 0 95px;
+}
+
+.menu {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 35px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.menu .imgContainer {
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+.menu .menuDetail {
+    padding: 0 10px;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.menuDetail .price {
+    font-size: 13px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.imgContainer .waitingTime {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+    color: #fff;
+    background-color: rgba(17, 17, 17, 0.8);
+    opacity: 0.8;
+    padding: 3px 10px;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.menuDetail h1 {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0 3px 0;
+}
+
+.menuDetail .ingredientsContainer {
+    height: 80px;
+    font-size: 13px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.addToCartBtn {
+    display: block;
+    margin: 15px 0;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 5px;
+}
+
+.addToCartBtn:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+/*----------------------------------------
+    responsive menus
+----------------------------------------*/
+
+/* For tablets: */
+@media only screen and (min-width: 560px) {
+    .menus {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+        justify-content: center;
+    }
+    .menu {
+        width: 40%;
+        margin: 0 15px 35px 15px;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 760px) {
+    .menu {
+        width: 26%;
+    }
+}
+@media only screen and (min-width: 1060px) {
+    .menu {
+        width: 20%;
+    }
+}
+@media only screen and (min-width: 1260px) {
+    .menus {
+        padding: 0 45px;
+    }
+    .menu {
+        width: 16%;
+        margin: 0 20px 35px 20px;
+    }
+}
+
+/*----------------------------------------
+    contact
+----------------------------------------*/
+.contactWrap {
+    background-color: #f3f3f3;
+}
+
+.contactContainer {
+    min-height: 600px;
+    background-color: white;
+    padding: 0 55px;
+}
+
+.contactContainer .contactHeader h1 {
+    font-size: 26px;
+    padding: 25px 0 5px 0;
+}
+
+.contactContainer .contactHeader h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contactContainer .contactHeader span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.contactBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactBody .emailContact .emailContactHeader h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.contactBody .emailContact .emailContactHeader span {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contactBody .emailContact .emailContactForm {
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contactBody .physicalContact {
+    padding: 10px 0 20px 0;
+}
+
+.contactBody .physicalContact h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contactBody .physicalContact ul {
+    padding-top: 10px;
+}
+
+.contactBody .physicalContact span,
+.contactBody .physicalContact ul li {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/*----------------------------------------
+    responsive contact
+----------------------------------------*/
+/* For desktop: */
+@media only screen and (min-width: 1060px) {
+    .contactBody {
+        display: flex;
+        flex-direction: row;
+    }
+    .contactBody .physicalContact {
+        padding: 25px 80px;
+    }
+}
+
+/*----------------------------------------
+    about
+----------------------------------------*/
+.aboutWrap {
+    background-color: #f3f3f3;
+}
+
+.aboutWrap .aboutContainer {
+    background-color: white;
+    padding: 25px 70px;
+    text-align: justify;
+}
+
+.aboutContainer > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.aboutContainer .whoWeAre h1,
+.aboutContainer .whyE h1 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.aboutContainer .whoWeAre p,
+.aboutContainer .whyE p,
+.aboutContainer .whyE ul li {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.ulList .firstList {
+    padding: 10px 40px;
+}
+
+.ulList .secondList {
+    padding: 10px 40px;
+}
+
+/*----------------------------------------
+    responsive about
+----------------------------------------*/
+/* For desktop: */
+@media only screen and (min-width: 1060px) {
+    .whyE .ulList {
+        display: flex;
+    }
+
+    .ulList .firstList {
+        flex: 1;
+    }
+
+    .ulList .secondList {
+        flex: 1;
+    }
+}
+
+/*----------------------------------------
+    cart
+----------------------------------------*/
+.cartBody {
+    min-height: 600px;
+}
+
+table th {
+    text-align: center;
+}
+
+table tbody tr th {
+    line-height: 80px;
+}
+
+table tbody .cartList td {
+    line-height: 80px;
+    text-align: center;
+}
+
+table tbody .cartList td a {
+    color: white;
+    background-color: #3a559f;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+table tbody .cartList td a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.cartButton {
+    display: flex;
+    padding: 30px 0;
+    border-top: 1px solid black;
+}
+
+.checkoutAndClear {
+    flex: 1;
+    padding: 0 40px 0 50px;
+    display: flex;
+}
+
+.totalPrice {
+    flex: 1;
+    text-align: right;
+    padding: 0 70px;
+}
+
+.checkout,
+.clear,
+.deliver {
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    margin-left: 10px;
+    height: 35px;
+}
+
+.clear {
+    background-color: red;
+}
+
+.clear:hover,
+.deliver:hover,
+.checkout:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    opacity: 0.8;
+}
+
+.noItems {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+.noItems img {
+    opacity: 0.4;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+}
+
+.noItems span {
+    opacity: 0.4;
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+/* container from admin page */
+
+.orderContainer {
+    margin: 60px 0 0 0;
+}
+
+.orderDetailContainer {
+    margin: 60px 0 0 0;
+}
+
+.orderDetailContainer .orderDetailLists {
+    padding: 15px 0;
+}
+
+.orderDetailContainer .orderDetailLists .orderDetailList {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.orderDetailList .orderDetailImg {
+    width: 140px;
+    height: 140px;
+    margin: 30px auto;
+}
+
+.orderDetailList .orderDetailImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.orderDetailList .orderDetailText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.orderDetailText span {
+    padding-bottom: 10px;
+}
+
+.orderDetailContainer .orderDetailDeliver {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.orderDetailContainer .orderDetailDeliver h1 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px 30px 10px 30px;
+    color: #ff6f00;
+}
+
+.orderDetailContainer .orderDetailDeliver h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 30px 10px 30px;
+}
+
+.orderDetailContainer .orderDetailDeliver a {
+    margin: 20px auto;
+}
+
+/*----------------------------------------
+    responsive admin order detail
+----------------------------------------*/
+
+/* For desktops: */
+@media only screen and (min-width: 1060px) {
+    .orderDetailContainer {
+        display: flex;
+    }
+
+    .orderDetailContainer .orderDetailLists,
+    .orderDetailContainer .orderDetailDeliver {
+        flex: 1;
+    }
+
+    .orderDetailContainer .orderDetailLists .orderDetailList {
+        display: flex;
+        text-align: left;
+    }
+
+    .orderDetailList .orderDetailText {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+
+    .orderDetailContainer .orderDetailDeliver h1 {
+        padding: 25px 30px;
+    }
+
+    .orderDetailContainer .orderDetailDeliver h2 {
+        padding: 0 30px 25px 30px;
+    }
+
+    .orderDetailContainer .orderDetailDeliver a {
+        margin: 20px auto;
+    }
+}
+
+/*----------------------------------------
+    footer
+----------------------------------------*/
+.footer {
+    background-color: #2d3c48;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 350px;
+    overflow: hidden;
+}
+
+.footer h1 {
+    font-size: 20px;
+    color: white;
+    padding: 25px 0 10px 0;
+}
+
+.footerItemsWrap {
+    display: flex;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+}
+
+.footerItems a {
+    font-size: 14px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.footerItems a:hover {
+    text-decoration: none;
+}
+
+.followUs {
+    flex: 0.6;
+}
+
+.followUs h1 {
+    padding-top: 10px;
+}
+
+.fa-facebook,
+.fa-google {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.followUs .fa-facebook {
+    background-color: #3a559f;
+}
+
+.followUs .fa-google {
+    background-color: #d14e42;
+    margin-right: none;
+}
+
+.followUs .fa-facebook:hover,
+.followUs .fa-google:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.copyRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+/*----------------------------------------
+    responsive footer
+----------------------------------------*/
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .footer {
+        padding: 0 65px;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 760px) {
+    .footer {
+        padding: 0 120px;
+    }
+}

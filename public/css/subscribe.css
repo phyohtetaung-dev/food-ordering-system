@@ -1,0 +1,451 @@
+/*----------------------------------------
+    header
+----------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------
+    bgImgContainer1
+----------------------------------------*/
+.bgImgContainer1 {
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgImgContainer1 .stripeContainer {
+    flex: 1;
+    background-color: white;
+}
+
+.bgImgContainer1 .stripeContainer .stripeHeader {
+    margin: 30px;
+    text-align: center;
+}
+
+.bgImgContainer1 .stripeContainer .stripeHeader h1 {
+    font-size: 34px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #ff6f00;
+}
+
+.bgImgContainer1 .stripeContainer .stripeHeader span {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.bgImgContainer1 .stripeContainer .stripeBody {
+    margin: 30px 0 35px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.stripeBody form {
+    padding: 0 35px;
+}
+
+/*----------------------------------------
+    infoContainer
+----------------------------------------*/
+.infoContainer {
+    background-color: white;
+    padding: 25px 0 45px 0;
+}
+
+.infoText {
+    padding: 20px 80px;
+    text-align: justify;
+}
+
+.infoText h1 {
+    font-size: 28px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.firstInfo .infoImg {
+    padding: 20px 80px 25px 80px;
+}
+
+.secondInfo .infoImg {
+    padding: 45px 85px 60px 85px;
+}
+
+/*----------------------------------------
+    responsive infoContainer
+----------------------------------------*/
+/* tablet size */
+@media only screen and (min-width: 560px) {
+    .firstInfo .infoImg {
+        padding: 20px 120px 30px 120px;
+    }
+
+    .secondInfo .infoImg {
+        padding: 40px 125px 55px 125px;
+    }
+}
+
+/* desktop size */
+@media only screen and (min-width: 760px) {
+    .firstInfo .infoImg {
+        padding: 10px 180px 30px 180px;
+    }
+
+    .secondInfo .infoImg {
+        padding: 40px 165px 55px 165px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .infoContainer .firstInfo,
+    .infoContainer .secondInfo {
+        display: flex;
+        padding: 10px;
+    }
+
+    .infoText {
+        width: 60%;
+    }
+    .infoImg {
+        flex: 1;
+    }
+
+    .infoText {
+        padding: 20px 50px;
+    }
+
+    .firstInfo .infoImg {
+        padding: 80px 20px 80px 20px;
+    }
+
+    .secondInfo .infoImg {
+        padding: 120px 0 120px 45px;
+    }
+}
+
+@media only screen and (min-width: 1160px) {
+    .firstInfo .infoImg {
+        padding: 30px 35px 20px 35px;
+    }
+
+    .secondInfo .infoImg {
+        padding: 80px 0 80px 45px;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    .infoText {
+        padding: 20px 70px;
+    }
+
+    .firstInfo .infoImg {
+        padding: 35px 90px;
+    }
+
+    .secondInfo .infoImg {
+        padding: 45px 80px 75px 80px;
+    }
+}
+
+/*----------------------------------------
+    bgImgContainer2
+----------------------------------------*/
+.bgImgContainer2 {
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgImgContainer2 h1 {
+    font-size: 34px;
+    padding: 10px 15px;
+    color: white;
+}
+.bgImgContainer2 h2 {
+    font-size: 20px;
+    padding: 5px 15px;
+    color: white;
+}
+
+/*----------------------------------------
+    realTime
+----------------------------------------*/
+.realTimeContainer {
+    background-color: white;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+.realTimeContainer h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0 20px 0;
+}
+
+.realTimeContainer span {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.realTimeWrap {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+
+.realTimeContainer .realTimeImg {
+    height: 200px;
+    width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.realTimeWrap .realTimeImg img {
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------------------------
+    responsive commentContainer
+----------------------------------------*/
+@media only screen and (min-width: 560px) {
+    .realTimeContainer {
+        padding: 50px 60px;
+    }
+
+    .realTimeContainer .realTimeImg {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .realTimeContainer {
+        padding: 70px 100px 50px 100px;
+    }
+
+    .realTimeContainer .realTimeImg {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .realTimeContainer {
+        padding: 50px 140px;
+    }
+
+    .realTimeContainer .realTimeImg {
+        height: 350px;
+    }
+}
+
+@media only screen and (min-width: 1160px) {
+    .realTimeContainer {
+        padding: 80px 140px 55px 140px;
+    }
+
+    .realTimeContainer .realTimeImg {
+        height: 400px;
+    }
+}
+/*----------------------------------------
+    commentContainer
+----------------------------------------*/
+.commentContainer {
+    background-color: white;
+    padding: 30px;
+    height: auto;
+    overflow: hidden;
+}
+
+.commentContainer .commentBody {
+    margin: 50px 0;
+}
+
+.commentHeader {
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+.commentHeader h1 {
+    font-size: 30px;
+}
+
+.commentBody .commentBodyImage {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.commentBody .commentBodyImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.commentBody .commentBodyText {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.commentBody .commentBodyText .commenter {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.commentBody .commentBodyText .commenterShop {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.commentBody .commentBodyText .comment {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*----------------------------------------
+    responsive commentContainer
+----------------------------------------*/
+@media only screen and (min-width: 1060px) {
+    .commentContainer .commentBody {
+        margin: 40px 0 10px 0;
+        width: 50%;
+        float: left;
+        display: flex;
+        padding: 10px 25px;
+    }
+
+    .commentBody .commentBodyText {
+        width: 70%;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    .commentContainer {
+        padding: 30px 70px 90px 70px;
+    }
+
+    .commentHeader {
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+}
+
+/*----------------------------------------
+    footer
+----------------------------------------*/
+.footer {
+    background-color: #2d3c48;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: 350px;
+    overflow: hidden;
+}
+
+.footer h1 {
+    font-size: 20px;
+    color: white;
+    padding: 25px 0 10px 0;
+}
+
+.footerItemsWrap {
+    display: flex;
+}
+
+.footerItems {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1;
+}
+
+.footerItems a {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.followUs {
+    flex: 0.6;
+}
+
+.followUs h1 {
+    padding-top: 10px;
+}
+
+.fa-facebook,
+.fa-google {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.followUs .fa-facebook {
+    background-color: #3a559f;
+}
+
+.followUs .fa-google {
+    background-color: #d14e42;
+    margin-right: none;
+}
+
+.followUs .fa-facebook:hover,
+.followUs .fa-google:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.copyRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+/*----------------------------------------
+    responsive footer
+----------------------------------------*/
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+    .footer {
+        padding: 0 65px;
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 760px) {
+    .footer {
+        padding: 0 120px;
+    }
+}
